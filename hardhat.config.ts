@@ -8,7 +8,7 @@ const config: HardhatUserConfig = {
   networks: {
     amoy: {
       url: "https://rpc-amoy.polygon.technology",
-      accounts: [process.env.ACCOUNT_PRIVATE_KEY || ""]
+      accounts: [process.env.ACCOUNT_PRIVATE_KEY || "0000000000000000000000000000000000000000000000000000000000000000"],
     }
   }
 };
