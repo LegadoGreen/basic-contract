@@ -1,9 +1,8 @@
 # Projecto de creacion basica de Smart Contract Legado
 
+Este proyecto ha sido creado usando Hardhat, e incluye contratos, scripts de despliegue (ignitors) y tests para contratos de prueba con distintos fines. Algunos de estos contratos son PixelCanvas y ChangeUri.
 
-Este proyecto ha sido creado usando Hardhat, e incluye contratos, scripts de despliegue (ignitors) y tests para el contrato de OneMillionPixels, un proyecto similar.
-
-El contrato ha sido desplegado en la red de pruebas de Polygon y se encuentra en la siguiente dirección: `0xFB98f5b50B8dbFB7583d36236893285D6150023E`.
+El contrato PixelCanvas ha sido desplegado en la red de pruebas de Polygon y se encuentra en la siguiente dirección: `0xFB98f5b50B8dbFB7583d36236893285D6150023E`.
 
 ## Requisitos Previos
 
@@ -63,10 +62,13 @@ El proyecto tiene la siguiente estructura de directorios:
 basic-contract/
 ├── contracts/          # Contratos inteligentes
 │   └── PixelCanvas.sol
+│   └── ChangeUri.sol
 ├── ignition/            # Scripts de despliegue
 │   └── PixelCanvas.ts
+│   └── ChangeUri.ts
 ├── test/               # Tests para los contratos
 │   └── PixelCanvas.ts
+│   └── ChangeUri.ts
 ├── hardhat.config.js   # Configuración de Hardhat
 └── README.md           # Este archivo
 ```
