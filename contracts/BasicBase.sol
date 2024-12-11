@@ -20,6 +20,17 @@ contract BasicERC721WithDynamicURI is ERC721, Ownable {
     nextTokenId++;
   }
 
+  function batchMint(address to, uint256 count) external onlyOwner {
+    require(
+      count > 0 && count <= 20,
+      "Batch mint: count must be between 1 and 20"
+    );
+    for (uint256 i = 0; i < count; i++) {
+      _safeMint(to, nextTokenId);
+      nextTokenId++;
+    }
+  }
+
   function setBaseURI(string memory newBaseURI) external onlyOwner {
     baseURI = newBaseURI;
   }
@@ -35,7 +46,11 @@ contract BasicERC721WithDynamicURI is ERC721, Ownable {
     try this.ownerOf(tokenId) returns (address) {
       return
         string(
-          abi.encodePacked(_baseURIInternal(), Strings.toString(tokenId), ".json")
+          abi.encodePacked(
+            _baseURIInternal(),
+            Strings.toString(tokenId),
+            ".json"
+          )
         );
     } catch {
       revert("ERC721Metadata: URI query for nonexistent token");
