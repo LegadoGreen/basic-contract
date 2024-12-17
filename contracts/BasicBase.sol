@@ -11,7 +11,7 @@ contract BasicERC721WithDynamicURI is ERC721, Ownable {
   constructor(
     string memory initialBaseURI,
     address initialOwner
-  ) ERC721("DynamicERC721", "D721") Ownable(initialOwner) {
+  ) ERC721("LegadoTestingNFTs", "LGD") Ownable(initialOwner) {
     baseURI = initialBaseURI;
   }
 
