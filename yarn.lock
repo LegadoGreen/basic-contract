@@ -1493,6 +1493,11 @@ env-paths@^2.2.0:
   resolved "https://registry.yarnpkg.com/env-paths/-/env-paths-2.2.1.tgz#420399d416ce1fbe9bc0a07c62fa68d67fd0f8f2"
   integrity sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==
 
+erc721a@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/erc721a/-/erc721a-4.3.0.tgz#d4590030f7c60deee45db1dc4e43fc4c93218353"
+  integrity sha512-JneTLVEH5I/rJMArAwwJ26CX4HvL3ql9Q3egpQ4QB7sz7vIGZbMdMmqHLBIIKhBlfToZKewtC7OZtdr3qU6jsA==
+
 escalade@^3.1.1:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.2.0.tgz#011a3f69856ba189dffa7dc8fcce99d2a87903e5"
